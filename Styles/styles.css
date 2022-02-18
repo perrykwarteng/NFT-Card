@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --color-primary: hsl(178, 100%, 50%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+/* container */
+.container {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 32rem;
+  height: 58rem;
+  background: hsl(216, 50%, 16%);
+  border-radius: 8px;
+}
+.hover {
+  position: relative;
+}
+.nft--image {
+  width: 27rem;
+  margin: 2.5rem;
+  border-radius: 8px;
+}
+.hover .nft--view {
+  position: absolute;
+  top: 42%;
+  left: 43%;
+  opacity: 0;
+}
+.nft--fill {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 27rem;
+  height: 27rem;
+  background: hsl(178, 100%, 50%);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+
+  opacity: 0;
+}
+.hover:hover .nft--fill {
+  filter: opacity(0.8);
+}
+
+.hover:hover .nft--fill,
+.hover:hover .nft--view {
+  opacity: 1;
+}
+.description {
+  padding: 0 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.des__heading {
+  font-weight: 600;
+}
+.des__heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+.des__paragraph {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 1rem;
+  color: hsl(215, 35%, 55%);
+}
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.detail2 {
+  position: relative;
+  top: 5px;
+}
+.detail .detail__image {
+  width: 1.5rem;
+}
+.detail .detail__text,
+.detail .detail__text2 {
+  font-size: 1.8rem;
+}
+.detail .detail__image2 {
+  width: 2rem;
+}
+.detail__image,
+.detail__image2 {
+  margin-right: 0.7rem;
+  position: relative;
+  top: 4px;
+}
+.detail .detail__text2 {
+  color: hsl(215, 35%, 55%);
+}
+.detail .detail__text {
+  color: hsl(178, 100%, 50%);
+}
+.line {
+  margin-top: 2rem;
+  color: hsl(215, 32%, 27%);
+}
+.avatar {
+  position: relative;
+}
+.avatar .avatar__image {
+  width: 5rem;
+  position: absolute;
+  top: 2rem;
+}
+.avatar__text {
+  position: absolute;
+  top: 3rem;
+  left: 6.5rem;
+}
+.avatar__color {
+  color: hsl(215, 35%, 55%);
+}
+.avatar__color1:hover {
+  color: hsl(178, 100%, 50%);
+}
